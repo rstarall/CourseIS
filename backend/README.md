@@ -19,14 +19,14 @@
 - LangChain
 - TinyDB/PostgreSQL
 - SQLAlchemy
-- OpenAI GPT-3.5
+- OpenAI GPT-3.5/DeepSeek-V2.5
 
 ## 安装说明
 
 1. 克隆项目
 ```bash
 git clone [项目地址]
-cd classroom-interaction
+cd backend
 ```
 
 2. 安装依赖
@@ -35,9 +35,10 @@ pip install -r requirements.txt
 ```
 
 3. 配置环境变量
-复制`.env.example`文件为`.env`，并填写相应的配置信息：
+并填写.env的配置信息：
 - 数据库配置（支持TinyDB和PostgreSQL）
 - OpenAI API密钥
+- 硅基流动密钥
 
 4. 初始化数据库
 ```bash

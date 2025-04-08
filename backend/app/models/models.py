@@ -21,5 +21,4 @@ class Question(Base):
     category = Column(String, nullable=True)
     student_id = Column(Integer, ForeignKey("students.id"))
     created_at = Column(DateTime(timezone=True), server_default=func.now())
-    
     student = relationship("Student", back_populates="questions") 
